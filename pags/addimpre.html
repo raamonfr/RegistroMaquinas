@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+    <title>Procon Registro</title>
+</head>
+<body class="fmt-body">
+    <main class="w-4/5 flex flex-col justify-center items-center">
+        <h1 class="titulo border-b-4 border-zinc-600 rounded-md p-2">CADASTRAR IMPRESSORA</h1>
+
+        <form method="post" class="flex flex-col  gap-24 justify-center my-16 p-8 rounded-xl shadow-lg">
+            <section class="area-inputs">
+                <div>
+                    <label for="idnomeimpre">Nome da impressora</label>
+                    <input class="input-form" type="text" name="nomeimpressora" id="idnomeimpre">
+                </div>
+                <div>
+                    <label for="idnomesetor">Setor</label>
+                    <input class="input-form" type="text" name="nomesetorimpressora" id="idnomesetor">
+                </div>
+                <div>
+                    <label for="idmarcaimpre">Marca</label>
+                    <input class="input-form" type="text" name="marcaimpressora" id="idmarcaimpre">
+                </div>
+            </section>
+
+            <section class="area-inputs">
+                <div>
+                    <label for="idipimpre">Ip da impressora</label>
+                    <input class="input-form" type="text" name="ipimpressora" id="idipimpre">
+                </div>
+
+                <div class="flex justify-center items-center gap-2">
+                    <input type="radio" name="opcaoimpre" id="idlexmark">
+                    <label for="idlexmark">Lexmark</label>
+                </div>
+
+                <div class="flex justify-center items-center gap-2">
+                    <input type="radio" name="opcaoimpre" id="idokidata">
+                    <label for="idokidata">Okidata</label>
+                </div>
+                
+                <div>
+                    <label for="idnumeroserie">Número de série</label>
+                    <input class="input-form" type="text" name="numeroserieimpre" id="idnumeroserie">
+                </div>
+            </section>
+
+            <div class=" flex justify-between">
+                <button type="button" onclick="javascript:history.go(-1)" class="botao-voltar">< VOLTAR</button>
+
+                <input class="botao-enviar" type="submit" value="REGISTRAR">
+            </div>
+        </form>
+    </main>
+
+    <script src="../src/scripts.js"></script>
+</body>
+</html>
