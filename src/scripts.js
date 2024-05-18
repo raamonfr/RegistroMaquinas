@@ -41,11 +41,17 @@ removerEspecificacoesBt.addEventListener('click', (event) => {
     let enderecoIP = document.getElementById('idenderecoip')
     let enderecoMAC = document.getElementById('idenderecomac')
     let ssd = document.getElementById('idssd')
+    let dns = document.getElementById('iddns')
+    let mascara = document.getElementById('idmascara')
+    let gateway = document.getElementById('idgateway')
 
-    processador.value = ''
-    enderecoIP.value = ''
-    enderecoMAC.value = ''
-    ssd.value = ''
+    if (processador) processador.value = '';
+    if (enderecoIP) enderecoIP.value = '';
+    if (enderecoMAC) enderecoMAC.value = '';
+    if (ssd) ssd.value = '';
+    if (dns) dns.value = '';
+    if (mascara) mascara.value = '';
+    if (gateway) gateway.value = '';
 
     btAddEspecificacoes.style.display = 'flex'
     especificacoes.style.display = 'none'

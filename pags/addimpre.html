@@ -14,42 +14,63 @@
             <section class="area-inputs">
                 <div>
                     <label for="idnomeimpre">Nome da impressora</label>
-                    <input class="input-form" type="text" name="nomeimpressora" id="idnomeimpre">
+                    <input class="input-form" type="text" name="nomeimpre" id="idnomeimpre" required>
                 </div>
+
                 <div>
-                    <label for="idnomesetor">Setor</label>
-                    <input class="input-form" type="text" name="nomesetorimpressora" id="idnomesetor">
+                    <label for="idsetor">Setor</label>
+                    <input class="input-form" type="text" name="setor" id="idsetor" required>
                 </div>
+                                
                 <div>
-                    <label for="idmarcaimpre">Marca</label>
-                    <input class="input-form" type="text" name="marcaimpressora" id="idmarcaimpre">
+                    <label for="idmarca">Marca/Empresa</label>
+                    <select class="select-form" name="marca" id="idmarca" required>
+                        <option value="xerox">Xerox</option>
+                        <option value="hp">HP</option>
+                        <option value="okidata">Okidata</option>
+                        <option value="lexmark">Lexmark</option>
+                    </select>
                 </div>
             </section>
 
             <section class="area-inputs">
                 <div>
-                    <label for="idipimpre">Ip da impressora</label>
-                    <input class="input-form" type="text" name="ipimpressora" id="idipimpre">
+                    <label for="idipimpressora">IP da impressora</label>
+                    <input class="input-form" type="text" name="ipimpressora" id="idipimpressora" required>
                 </div>
 
-                <div class="flex justify-center items-center gap-2">
-                    <input type="radio" name="opcaoimpre" id="idlexmark">
-                    <label for="idlexmark">Lexmark</label>
+                <div>
+                    <label for="idnumeroserie">Número de série</label>
+                    <input class="input-form" type="text" name="numeroserie" id="idnumeroserie" required>
+                </div>
+            </section>
+
+            <button id="addEspecificacoes" type="button" class="bt-add-epecificacoes">
+                <img src="../src/imgs/X.png" alt="Imagem para adicionar especificações">
+                Adicionar Especificações Técnicas
+            </button>
+
+            <section id="especificacoes" class="area-inputs gap-8">
+                <div>
+                    <label for="iddns">DNS</label>
+                    <input class="input-form" type="text" name="dns" id="iddns">
                 </div>
 
-                <div class="flex justify-center items-center gap-2">
-                    <input type="radio" name="opcaoimpre" id="idokidata">
-                    <label for="idokidata">Okidata</label>
+                <div>
+                    <label for="idmascara">Máscara sub-rede</label>
+                    <input class="input-form" type="text" name="mascarasubrede" id="idmascara">
                 </div>
                 
                 <div>
-                    <label for="idnumeroserie">Número de série</label>
-                    <input class="input-form" type="text" name="numeroserieimpre" id="idnumeroserie">
+                    <label for="idgateway">Gateway</label>
+                    <input class="input-form" type="text" name="gateway" id="idgateway">
                 </div>
             </section>
 
             <div class="flex justify-between w-full">
                 <button type="button" onclick="javascript:history.go(-1)" class="botao-voltar">< VOLTAR</button>
+
+                <button id="removerespecificacoes" type="button" class="botao-remover-especificacoes">NÃO ADICIONAR ESPECIFICAÇÕES</button>
 
                 <input class="botao-enviar" type="submit" value="REGISTRAR">
             </div>
