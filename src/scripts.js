@@ -1,3 +1,4 @@
+//redirecionamentos
 function addmaqs() {
     window.location.href = "../pags/addmaqs.html"
 }
@@ -10,15 +11,17 @@ function addinvesti() {
     window.location.href = "../pags/addinvesti.html"
 }
 
+
+//declaração de variáveis globais
 let removerEspecificacoesBt = document.getElementById('removerespecificacoes')
-removerEspecificacoesBt.style.display = 'none'
-
-
 let especificacoes = document.getElementById('especificacoes')
-especificacoes.style.display = 'none'
-
 let btAddEspecificacoes = document.getElementById('addEspecificacoes')
 
+removerEspecificacoesBt.style.display = 'none'
+especificacoes.style.display = 'none'
+
+
+//eventos e funcionalidades
 btAddEspecificacoes.addEventListener('click', (event) => {
     btAddEspecificacoes.style.display = 'none'
     especificacoes.style.display = 'flex'
