@@ -7,8 +7,8 @@ function addimpres() {
     window.location.href = "../pags/addimpre.html"
 }
 
-function addinvesti() {
-    window.location.href = "../pags/addinvesti.html"
+function addinvestiinfor() {
+    window.location.href = "../pags/addinvestiinfor.html"
 }
 
 

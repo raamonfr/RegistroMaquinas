@@ -681,6 +681,14 @@ video {
   padding: 0.5rem;
 }
 
+.select-form {
+  display: block;
+  width: 15rem;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  padding: 0.5rem;
+}
+
 .area-inputs {
   display: flex;
   justify-content: center;

@@ -8,7 +8,7 @@
 </head>
 <body class="fmt-body">
     <main class="conteiner">
-        <h1 class="titulo border-b-4 border-zinc-600 rounded-md p-2">CADASTRAR INVESTIPLAN</h1>
+        <h1 class="titulo border-b-4 border-zinc-600 rounded-md p-2">CADASTRAR INVESTIPLAN & INFORPARTNER</h1>
         <p>OBS: Se o campo de tombamento estiver vazio, vai ser considerado sem tombamento</p>
 
         <form method="post" class="fmt-forms">
@@ -26,6 +26,16 @@
                 <div>
                     <label for="idresponsavelmaquina">Responsável pela máquina</label>
                     <input class="input-form" type="text" name="responsavelmaquina" id="idresponsavelmaquina" required>
+                </div>
+
+                                
+                <div>
+                    <label for="idempresa">Empresa responsável</label>
+                    <select class="select-form" name="empresa" id="idempresa" required>
+                        <option value="investiplan">Investiplan</option>
+                        <option value="inforpartner">Inforpartner</option>
+                    </select>
+
                 </div>
             </section>
 

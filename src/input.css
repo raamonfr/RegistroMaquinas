@@ -57,6 +57,12 @@
 }
 
 @layer components {
+    .select-form {
+        @apply block border-2 rounded-md p-2 block w-60;
+    }
+}
+
+@layer components {
     .area-inputs {
         @apply flex gap-24 justify-center;
     }
