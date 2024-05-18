@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .fmt-body {
+        @apply w-screen h-screen flex justify-center items-center;
+    }
+}
+
+@layer components {
+    .titulo {
+        @apply text-center font-bold text-3xl;
+    }
+}
+
+@layer components {
+    .botao {
+        @apply bg-slate-600 p-4 rounded-lg text-white font-semibold hover:bg-slate-800  active:bg-slate-600;
+    }
+}
+
+@layer components {
+    .botao-enviar {
+        @apply bg-green-500 text-white p-4 rounded-lg font-semibold hover:bg-green-800 active:bg-green-500 cursor-pointer;
+    }
+}
+
+@layer components {
+    .botao-voltar {
+        @apply bg-sky-500 text-white p-4 rounded-lg font-semibold hover:bg-sky-800 active:bg-sky-500;
+    }
+}
+
+@layer components {
+    .input-form {
+        @apply border-2 rounded-md p-2 block w-60;
+    }
+}
+
+@layer components {
+    .area-inputs {
+        @apply flex gap-24 justify-center;
+    }
+}
