@@ -15,6 +15,10 @@ function addproconmaq() {
     window.location.href = "../pags/addproconmaq.html"
 }
 
+function addnotes() {
+    window.location.href = "../pags/addnotes.html"
+}
+
 
 //declaração de variáveis globais
 let removerEspecificacoesBt = document.getElementById('removerespecificacoes')
