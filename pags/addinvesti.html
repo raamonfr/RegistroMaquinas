@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../src/output.css" rel="stylesheet">
+    <title>Procon Registro</title>
+</head>
+<body class="fmt-body">
+    <main class="conteiner">
+        <h1 class="titulo border-b-4 border-zinc-600 rounded-md p-2">CADASTRAR INVESTIPLAN</h1>
+        <p>OBS: Se o campo de tombamento estiver vazio, vai ser considerado sem tombamento</p>
+
+        <form method="post" class="fmt-forms">
+            <section class="area-inputs">
+                <div>
+                    <label for="idnomemaquina">Nome da máquina</label>
+                    <input class="input-form" type="text" name="nomemaquina" id="idnomemaquina" required>
+                </div>
+
+                <div>
+                    <label for="idsetor">Setor</label>
+                    <input class="input-form" type="text" name="setor" id="idsetor" required>
+                </div>
+                
+                <div>
+                    <label for="idresponsavelmaquina">Responsável pela máquina</label>
+                    <input class="input-form" type="text" name="responsavelmaquina" id="idresponsavelmaquina" required>
+                </div>
+            </section>
+
+            <section>
+                <h1 class="titulo text-xl">TOMBAMENTOS</h1>
+
+                <section class="area-inputs gap-4 rounded-lg bg-white shadow-lg p-4">
+                    <div>
+                        <label for="idgabinete">Gabinete</label>
+                        <input class="input-form" type="text" name="gabinete" id="idgabinete">
+                    </div>
+
+                    <div>
+                        <label for="idmonitor">Monitor</label>
+                        <input class="input-form" type="text" name="monitor" id="idmonitor">
+                    </div>
+                    
+                    <div>
+                        <label for="idteclado">Teclado</label>
+                        <input class="input-form" type="text" name="teclado" id="idteclado">
+                    </div>
+                                        
+                    <div>
+                        <label for="idmouse">Mouse</label>
+                        <input class="input-form" type="text" name="mouse" id="idmouse">
+                    </div>
+                                        
+                    <div>
+                        <label for="idestabilizador">Estabilizador</label>
+                        <input class="input-form" type="text" name="estabilizador" id="idestabilizador">
+                    </div>
+                </section>
+            </section>
+
+            <button id="addEspecificacoes" type="button" class="bt-add-epecificacoes">
+                <img src="../src/imgs/X.png" alt="Imagem para adicionar especificações">
+                Adicionar Especificações Técnicas
+            </button>
+
+            <section id="especificacoes" class="area-inputs gap-8">
+                <div>
+                    <label for="idprocessador">Processador</label>
+                    <input class="input-form" type="text" name="processador" id="idprocessador">
+                </div>
+
+                <div>
+                    <label for="idenderecoip">Endereço IP</label>
+                    <input class="input-form" type="text" name="enderecoip" id="idenderecoip">
+                </div>
+                
+                <div>
+                    <label for="idenderecomac">Endereço MAC</label>
+                    <input class="input-form" type="text" name="enderecomac" id="idenderecomac">
+                </div>
+                                    
+                <div>
+                    <label for="idssd">SSD (Marca e Espaço)</label>
+                    <input class="input-form" type="text" name="ssd" id="idssd">
+                </div>
+            </section>
+
+            <div class="flex justify-between w-full">
+                <button type="button" onclick="javascript:history.go(-1)" class="botao-voltar">< VOLTAR</button>
+
+                <button id="removerespecificacoes" type="button" class="botao-remover-especificacoes">NÃO ADICIONAR ESPECIFICAÇÕES</button>
+
+                <input class="botao-enviar" type="submit" value="REGISTRAR">
+            </div>
+        </form>
+    </main>
+
+    <script src="../src/scripts.js"></script>
+</body>
+</html>
