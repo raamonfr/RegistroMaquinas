@@ -11,6 +11,10 @@ function addinvestiinfor() {
     window.location.href = "../pags/addinvestiinfor.html"
 }
 
+function addproconmaq() {
+    window.location.href = "../pags/addproconmaq.html"
+}
+
 
 //declaração de variáveis globais
 let removerEspecificacoesBt = document.getElementById('removerespecificacoes')

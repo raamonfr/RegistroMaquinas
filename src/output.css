@@ -760,6 +760,10 @@ video {
   gap: 2rem;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
