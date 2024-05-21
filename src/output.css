@@ -614,6 +614,7 @@ video {
 }
 
 .botao-remover-especificacoes {
+  margin: 0.5rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -634,6 +635,7 @@ video {
 }
 
 .botao-enviar {
+  margin: 0.5rem;
   cursor: pointer;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -655,6 +657,7 @@ video {
 }
 
 .botao-voltar {
+  margin: 0.5rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
@@ -703,6 +706,7 @@ video {
   margin-right: 1rem;
   display: flex;
   width: 20rem;
+  max-width: 100%;
   align-items: center;
   justify-content: center;
   border-radius: 0.75rem;
@@ -721,14 +725,18 @@ video {
 .area-botoes-form {
   display: flex;
   width: 100%;
-  max-width: 100%;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -743,6 +751,18 @@ video {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -755,8 +775,12 @@ video {
   flex-wrap: wrap;
 }
 
-.justify-between {
-  justify-content: space-between;
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .gap-20 {
@@ -769,6 +793,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-lg {
@@ -810,4 +838,28 @@ video {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .md\:area-botoes-form {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:fmt-body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }

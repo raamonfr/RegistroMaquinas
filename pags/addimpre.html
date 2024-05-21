@@ -6,12 +6,12 @@
     <link href="../src/output.css" rel="stylesheet">
     <title>Procon Registro</title>
 </head>
-<body class="fmt-body">
+<body class="flex justify-center lg:fmt-body">
     <main class="conteiner">
-        <h1 class="titulo border-b-4 border-zinc-600 rounded-md p-2">CADASTRAR IMPRESSORA</h1>
+        <h1 class="my-4 titulo border-b-4 border-zinc-600 rounded-md p-2 lg:my-0">CADASTRAR IMPRESSORA</h1>
 
         <form method="post" class="fmt-forms">
-            <section class="area-inputs max-w-full flex-wrap">
+            <section class="area-inputs">
                 <div>
                     <label for="idnomeimpre">Nome da impressora</label>
                     <input class="input-form" type="text" name="nomeimpre" id="idnomeimpre" required>
@@ -48,7 +48,7 @@
                 Adicionar Especificações Técnicas
             </button>
 
-            <section id="especificacoes" class="area-inputs gap-8 max-w-full flex-wrap">
+            <section id="especificacoes" class="area-inputs gap-8">
                 <div>
                     <label for="iddns">DNS</label>
                     <input class="input-form" type="text" name="dns" id="iddns">
@@ -65,7 +65,7 @@
                 </div>
             </section>
 
-            <div class="area-botoes-form">
+            <div class="flex flex-col md:area-botoes-form">
                 <button type="button" onclick="javascript:history.go(-1)" class="botao-voltar">< VOLTAR</button>
 
                 <button id="removerespecificacoes" type="button" class="botao-remover-especificacoes">NÃO ADICIONAR ESPECIFICAÇÕES</button>
