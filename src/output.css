@@ -692,6 +692,8 @@ video {
 
 .area-inputs {
   display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem;
 }
@@ -714,6 +716,14 @@ video {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.area-botoes-form {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .my-8 {

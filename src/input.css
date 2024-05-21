@@ -64,12 +64,18 @@
 
 @layer components {
     .area-inputs {
-        @apply flex gap-10 justify-center;
+        @apply flex gap-10 justify-center max-w-full flex-wrap;
     }
 }
 
 @layer components {
     .bt-add-epecificacoes {
         @apply flex justify-center items-center shadow-lg rounded-xl mx-4 w-80 duration-300 hover:scale-110;
+    }
+}
+
+@layer components {
+    .area-botoes-form {
+        @apply flex justify-between w-full max-w-full flex-wrap;
     }
 }
