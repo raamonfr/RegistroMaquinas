@@ -22,7 +22,7 @@
 
 @layer components {
     .fmt-forms {
-        @apply flex flex-col  gap-24 justify-center items-center my-16 p-8 rounded-xl shadow-lg;
+        @apply w-full flex flex-col gap-10 justify-center items-center my-16 p-8 rounded-xl shadow-lg;
     }
 }
 
@@ -52,19 +52,19 @@
 
 @layer components {
     .input-form {
-        @apply border-2 rounded-md p-2 block w-60;
+        @apply border-2 rounded-md p-2 block w-48;
     }
 }
 
 @layer components {
     .select-form {
-        @apply block border-2 rounded-md p-2 block w-60;
+        @apply block border-2 rounded-md p-2 block w-48;
     }
 }
 
 @layer components {
     .area-inputs {
-        @apply flex gap-24 justify-center;
+        @apply flex gap-10 justify-center;
     }
 }
 
